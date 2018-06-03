@@ -29,7 +29,10 @@ def track_login(request):
             if response.status_code == 200:
                 list = Complaint.objects.filter(aadhar_no_id=request.POST.get('aadhaar_id'))
                 return HttpResponse(template.render(context={'list': list}))
-
+            else:
+                return HttpResponse("Wrong credentials")
+        else:
+            return HttpResponse("Invalid form")
     else:
         form = TrackForm()
         return render(request, 'complaint_login.html', {

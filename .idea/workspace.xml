@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3eff64e4-e211-4245-a832-7cd968203abe" name="Default" comment="" />
+    <list default="true" id="3eff64e4-e211-4245-a832-7cd968203abe" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/efir/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/efir/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/efirapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/efirapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/complaint_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/complaint_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/complaint_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/complaint_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/track.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/track.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +23,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="36" column="6" lean-forward="true" selection-start-line="24" selection-end-line="36" selection-end-column="6" />
+            <state relative-caret-position="221">
+              <caret line="17" column="102" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="102" />
             </state>
           </provider>
         </entry>
@@ -32,11 +38,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="track.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/efirapp/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="track.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/track.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+            <state relative-caret-position="247">
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -44,8 +62,8 @@
       <file leaf-file-name="complaint_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/complaint_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="47" column="31" lean-forward="true" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+            <state relative-caret-position="102">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="21" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -53,26 +71,17 @@
       <file leaf-file-name="data.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/data.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="66" column="12" lean-forward="true" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+            <state relative-caret-position="17">
+              <caret line="17" selection-start-line="17" selection-end-line="22" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="status_form.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/efirapp/status_form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/efir/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="95" column="1" lean-forward="true" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
+            <state relative-caret-position="169">
+              <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
               <folding>
                 <element signature="e#305#314#0" expanded="true" />
               </folding>
@@ -83,8 +92,8 @@
       <file leaf-file-name="complaint_upload.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/complaint_upload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
+            <state relative-caret-position="17">
+              <caret line="118" column="17" lean-forward="true" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -92,8 +101,8 @@
       <file leaf-file-name="complaint_login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/complaint_login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
+            <state relative-caret-position="179">
+              <caret line="162" column="62" lean-forward="true" selection-start-line="162" selection-start-column="62" selection-end-line="162" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -132,23 +141,23 @@
         <option value="$PROJECT_DIR$/templates/script.js" />
         <option value="$PROJECT_DIR$/efir/storage_backends.py" />
         <option value="$PROJECT_DIR$/efirapp/forms.py" />
-        <option value="$PROJECT_DIR$/efir/settings.py" />
         <option value="$PROJECT_DIR$/efirapp/filters.py" />
         <option value="$PROJECT_DIR$/templates/status_form.html" />
         <option value="$PROJECT_DIR$/efir/urls.py" />
         <option value="$PROJECT_DIR$/templates/efirapp/aadhar.html" />
         <option value="$PROJECT_DIR$/efirapp/models.py" />
-        <option value="$PROJECT_DIR$/efirapp/views.py" />
         <option value="$PROJECT_DIR$/templates/test.html" />
-        <option value="$PROJECT_DIR$/templates/track.html" />
-        <option value="$PROJECT_DIR$/templates/complaint_list.html" />
-        <option value="$PROJECT_DIR$/templates/complaint_login.html" />
         <option value="$PROJECT_DIR$/templates/complaint_upload.html" />
         <option value="$PROJECT_DIR$/templates/data.html" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/templates/aadhar.html" />
         <option value="$PROJECT_DIR$/templates/efirapp/status_form.html" />
         <option value="$PROJECT_DIR$/templates/comp_list.html" />
+        <option value="$PROJECT_DIR$/efir/settings.py" />
+        <option value="$PROJECT_DIR$/templates/complaint_login.html" />
+        <option value="$PROJECT_DIR$/templates/complaint_list.html" />
+        <option value="$PROJECT_DIR$/efirapp/views.py" />
+        <option value="$PROJECT_DIR$/templates/track.html" />
       </list>
     </option>
   </component>
@@ -434,22 +443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/efirapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#1738#3809#0" />
-            <element signature="e#3858#4581#0" />
-            <element signature="e#4616#4872#0" />
-            <element signature="e#4904#5090#0" />
-            <element signature="e#5118#5297#0" />
-            <element signature="e#5335#5444#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/efirapp/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -494,41 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/complaint_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="47" column="31" lean-forward="true" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/complaint_login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/complaint_upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="66" column="12" lean-forward="true" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="36" column="6" lean-forward="true" selection-start-line="24" selection-end-line="36" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="77">
@@ -536,20 +494,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/track.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/efir/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="95" column="1" lean-forward="true" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
+        <state relative-caret-position="169">
+          <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
           <folding>
             <element signature="e#305#314#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="102" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/complaint_upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="118" column="17" lean-forward="true" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/complaint_login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="162" column="62" lean-forward="true" selection-start-line="162" selection-start-column="62" selection-end-line="162" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="17" selection-start-line="17" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/efirapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/complaint_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/track.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
         </state>
       </provider>
     </entry>
