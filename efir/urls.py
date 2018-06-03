@@ -29,6 +29,6 @@ urlpatterns = [
     url('search', views.search, name='search'),
     url('status/(?P<fir_id>\d+)/update/$', views.statusupdateview.as_view()),
     url('aadhar/(?P<aadhaar_id>\d+)', views.aadhar),
-    path('state',views.statecreateview),
-    path('city',views.citycreateview)
+    path('state',views.statecreate),
+    path('city',views.cityview)
 ]
