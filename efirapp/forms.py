@@ -15,6 +15,15 @@ class TrackForm(forms.Form):
     otp = forms.IntegerField()
     txn_id = forms.IntegerField()
 
+class StateForm(forms.ModelForm):
+    class Meta:
+        model = State
+        fields = ('name',)
+
+class CityForm(forms.ModelForm):
+    class Meta:
+        model = City
+        fields = ('state', 'name')
 
 class ComplaintForm(forms.ModelForm):
     class Meta:

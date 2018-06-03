@@ -135,3 +135,27 @@ def search(request):
 def aadhar(request,aadhaar_id):
     data = Aadhar.objects.filter(aadhaar_id=aadhaar_id)
     return render(request, 'aadhar.html', {'list': data})
+
+
+class statecreateview(CreateView):
+    model = State
+    fields = ('name',)
+
+    def form_valid(self, form):
+        form.instance.owner = self.request.user
+        return super(statecreateview, self).form_valid(form)
+
+    def get_success_url(self):
+        return HttpResponse("success")
+
+
+class citycreateview(CreateView):
+    model = City
+    fields = ('state','name',)
+
+    def form_valid(self, form):
+        form.instance.owner = self.request.user
+        return super(citycreateview, self).form_valid(form)
+
+    def get_success_url(self):
+        return HttpResponse("success")
