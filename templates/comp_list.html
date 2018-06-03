@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+         <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <title>Complaints</title>
+     <style>
+       .corner {
+  position: fixed; /* or absolute */
+  top: 0%;
+  left: 90%;
+}
+
+         .home{
+              position: fixed; /* or absolute */
+             top: 0%;
+             left: 85%;
+         }
+         #xyz{
+             /*position: fixed; /* or absolute */
+             top: 10%;
+             left: 0%;
+             max-height:250px;
+             overflow:auto;
+         }
+          body {
+    background-image:url(https://housedemocrats.wa.gov/tmp/2012/12/DomeWebsiteBackground2-1024x512.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+ }
+   </style>
+</head>
+<body>
+{% load widget_tweaks %}
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" >e-FIR Portal</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/home">Home</a></li>
+      <li><a href="/upload/login">File FIR</a></li>
+      <li><a href="/track">Track FIR</a></li>
+
+    </ul>
+  </div>
+</nav>
+{% block content %}
+  <form method="get">
+    <div class="well">
+      <h4 style="margin-top: 0">Filter</h4>
+      <div class="row">
+        <div class="form-group col-sm-4 col-md-3">
+          {{ filter.form.state.label_tag }}
+          {% render_field filter.form.state class="form-control" %}
+        </div>
+        <div class="form-group col-sm-4 col-md-3">
+          {{ filter.form.city.label_tag }}
+          {% render_field filter.form.city class="form-control" %}
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </button>
+    </div>
+  </form>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+          <th>Aadhaar id</th>
+        <th>Fir id</th>
+        <th>State</th>
+        <th>City</th>
+        <th>Complain</th>
+        <th>Recording</th>
+          <th>Status</th>
+          <th>Comments</th>
+          <th>Edit Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for user in filter.qs %}
+        <tr>
+            <td><a href="/aadhar/{{ user.aadhar_no_id }}">{{ user.aadhar_no_id }}</a></td>
+          <td>{{ user.fir_id}}</td>
+          <td>{{ user.state }}</td>
+          <td>{{ user.city }}</td>
+          <td>{{ user.complain }}</td>
+            <td>{{ user.recording }}</td>
+            <td>{{ user.status_set.all.0.get_status_display }}</td>
+            <td>{{ user.status_set.all.0.comments }}</td>
+        <td><button class="btn btn-warning center-block" onclick="location.href='/status/{{ user.fir_id }}/update';">Edit</button></td>
+        </tr>
+      {% empty %}
+        <tr>
+          <td colspan="5">No data</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
+</body>
+</html>

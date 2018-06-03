@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <title>Inputs</title>
+     <style>
+       .corner {
+  position: fixed; /* or absolute */
+  top: 0%;
+  left: 90%;
+}
+
+         .home{
+              position: fixed; /* or absolute */
+             top: 0%;
+             left: 85%;
+         }
+         #xyz{
+             /*position: fixed; /* or absolute */
+             top: 10%;
+             left: 0%;
+             max-height:250px;
+             overflow:auto;
+         }
+   </style>
+</head>
+<body>
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.16/backbone.localStorage-min.js" type="text/javascript"></script>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" >e-FIR Portal</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/home">Home</a></li>
+      <li><a href="/upload/login">File FIR</a></li>
+      <li><a href="/track">Track FIR</a></li>
+
+    </ul>
+  </div>
+</nav>
+{%  if list %}
+
+
+
+ <table class="table table-hover table-bordered" id="xyz">
+ <tr>
+        <th>Fir id</th>
+        <th>State</th>
+        <th>City</th>
+        <th>Complain</th>
+        <th>Recording</th>
+        <th>Status</th>
+
+
+ </tr>
+          <tbody>
+          {% for rest in list %}
+            <tr>
+                <td>{{ rest.fir_id }}</td>
+                <td>{{ rest.state }}</td>
+                <td>{{ rest.city }}</td>
+                <td>{{ rest.complain }}</td>
+                <td>{{ rest.recording }}</td>
+                <td><button class="btn btn-warning center-block" onclick="location.href='/track/{{ rest.fir_id }}';">Status</button></td>
+            </tr>
+
+          {% endfor %}
+          </tbody>
+</table>
+{% else %}
+  No inputs.<br>
+  {% endif %}
+</body>
+</html>

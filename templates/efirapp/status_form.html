@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        .centered {
+  position: fixed; /* or absolute */
+  top: 40%;
+  left: 30%;
+}
+body {
+    background-image:url(https://housedemocrats.wa.gov/tmp/2012/12/DomeWebsiteBackground2-1024x512.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+ }
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" >e-FIR Portal</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/home">Home</a></li>
+      <li><a href="/upload/login">File FIR</a></li>
+      <li><a href="/track">Track FIR</a></li>
+
+    </ul>
+  </div>
+</nav>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+<input type="submit" value="Save" />
+</form>
+</body>
+</html>
